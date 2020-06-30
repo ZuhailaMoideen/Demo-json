@@ -1,0 +1,46 @@
+
+	<!DOCTYPE html>
+    <html lang="en-US" ng-app="brdapp" >
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"  >
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+
+		<title>Angular Json Demo</title>
+
+    </head>
+    
+<body >
+
+<h2><strong><u><center>Angular API sample</center></u></strong></h2><br/><br/>
+<div class="container" ng-controller="brdctrl">
+    <table  align="center" width="40%"  height="40%" border="1" cellpadding="0"cellspacing="0" >
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Type</th>
+        </tr>
+    </thead>
+        <tr>
+            <tr ng-repeat="samples in sample">
+                
+                <td>{{ samples.ID }}</td>
+                <td>{{samples.Name }}</td>
+                <td>{{samples.Type}}</td>
+                
+            </tr>
+
+        </tr>
+    
+    </table>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   
+<script type="text/javascript" src="script.js"></script>
+  
+
+</body>
+</html>
